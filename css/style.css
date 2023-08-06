@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #ff274b;
+    --second-color: #f7bcf7;
+    --light-color: #ffffff;
+    --bg-color-1: #171a1c;
+    --bg-color-2: #22282a;
+    --padding: 8%;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    /* 1rem=16px */
+    font-size: 1rem;
+    color: var(--light-color);
+
+}
+
+/* start header */
+
+header {
+    background-color: var(--bg-color-1);
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+span {
+    color: var(--main-color);
+}
+
+header nav h2 {
+    font: size 2.2rem;
+    letter-spacing: .7px;
+    cursor: pointer;
+
+}
+
+nav {
+    background-color: var(--bg-color-2);
+    padding: 2.2rem 8% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+
+
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem 1.2rem;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--light-colorr);
+    text-transform: capitalize;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+header nav ul li a:hover {
+    color: var(--main-color);
+
+
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    font-weight: bold;
+    padding: .81rem 1.86rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 00.4s;
+    -webkit-transition: 00.4s;
+    -moz-transition: 00.4s;
+    -ms-transition: 00.4s;
+    -o-transition: 00.4s;
+    /* حتى لايتحرك العناصر كلها عند عمل هفر في البوردر */
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background-color: white;
+    border: 2px solid #020303;
+
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 2.2rem;
+    margin-top: 2rem;
+    width: auto;
+
+
+
+
+
+
+}
+
+.text-content {
+    margin-left: 3rem;
+
+
+
+
+}
+
+header section h1 {
+    font-size: 2.4rem;
+    margin: 1.7rem 0;
+
+}
+
+header section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2.2rem;
+
+}
+
+header section h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.10rem;
+
+}
+
+header section .text-content a {
+    margin-top: 60px;
+
+}
+
+.media {
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+}
+
+.media img {
+    width: 2.5rem;
+    margin-right: 2.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+
+}
+
+.media img:hover {
+    margin-left: 10px;
+    /* تكبير العناصر عند الضغط عليه */
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.img-content {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    margin-top: 6rem;
+    transition: bottom 1s, left 1s;
+    -webkit-transition: bottom 1s, left 1s;
+    -moz-transition: bottom 1s, left 1s;
+    -ms-transition: bottom 1s, left 1s;
+    -o-transition: bottom 1s, left 1s;
+
+}
+
+.img-content svg {
+    width: 35rem;
+}
+
+header .img-content img {
+    position: absolute;
+    bottom: 2%;
+
+
+
+
+}
+
+.img-content:hover .shap {
+    bottom: 40px;
+
+
+}
+
+.img-content:hover .my-img {
+    left: 20%;
+
+}
+
+/* end header */
+
+/*  start section about me */
+
+
+.about-me {
+    padding-top: 50px;
+    padding: 0 40px;
+    background-color: var(--bg-color-2);
+
+
+
+}
+
+.about-me h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-about-me img {
+    width: 80%;
+}
+
+.container-about-me .text {
+
+    padding-top: 5rem;
+}
+
+.container-about-me .text h3 {
+
+    text-align: left;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+
+}
+
+.container-about-me .text h4 {
+    line-height: 2rem;
+    color: var(--second-color);
+
+}
+
+/* end about me */
+/* start services */
+section .services {
+
+    padding: 60px;
+
+    background: var(--bg-color-1);
+    text-align: center;
+
+
+
+}
+
+.services h2 {
+    font-size: 2.3rem;
+}
+
+.about-servgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 3rem;
+    gap: 10px;
+
+
+}
+
+.cardsrv {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #000000;
+    padding: 1.3rem 2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.cardsrv i {
+    color: red;
+    font-size: 40px;
+    margin-top: 20px;
+
+
+}
+
+.cardsrv h3 {
+    margin: 5px 0 20px;
+}
+
+.cardsrv p {
+    color: var(--second-color);
+    font-weight: 300;
+    line-height: 1.6;
+
+
+}
+
+/* endsewvices */
+/* skils */
+.skils {
+    padding-top: 50px;
+    padding: 0 40px;
+    background-color: var(--bg-color-2);
+
+
+
+}
+
+.skils h3 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+
+}
+
+.skils-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-skils img {
+    width: 80%;
+   
+}
+
+.container-skils .text {
+    font-size: 2.2rem;
+}
+
+.imge-languge {
+    margin-top: 20px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+
+}
+
+/* end skils */
+/* start footer */
+footer {
+    padding: 2.2rem var(--padding);
+    background-color: var(--bg-color-1);
+    text-align: center;
+
+}
+
+.container-footer p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: var(--second-color);
+}
+
+.footerend {
+
+    background-color: var(--bg-color-2);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+
+
+
+
+/* end footer */
+
+/* start media */
+@media screen and (max-width : 575px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bg-color-1);
+        border-bottom: 1px solid var(--bg-color-2);
+    }
+
+    header section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+
+    .container-about-me img {
+        width: 70%;
+    }
+
+    .container-about-me .text {
+        text-align: center;
+
+
+    }
+
+    .container-about-me .text h3 {
+        font-size: 20px;
+    }
+
+    .about-servgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skils-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+
+    .about-servgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-about-me img {
+        margin-right: 40px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width :782px) {
+    .about-servgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width : 980px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bg-color-1);
+        border-bottom: 1px solid var(--bg-color-2);
+    }
+
+    .img-content {
+        width: 30%;
+        height: 70%;
+    }
+
+    header section {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
